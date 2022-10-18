@@ -1,0 +1,49 @@
+single line comment:
+
+#this is single line comment
+
+multi line comment:
+
+"""
+abc 
+pqr
+xyz
+"""
+
+Variables:
+- Variable should start with alphabet or underscore (__)
+- All the characters except the first character may be an alphabet of lower-case(a-z), upper-case (A-Z), underscore, or digit (0-9).
+e.g.:
+valid identifiers: a123, _n, n_9, etc.
+invalid identifiers: 1a, n%4, n 9, etc.
+
+to input a number in the console:
+use the input() function in the code
+e.g.: 
+
+def sum():
+    a = int(input('Enter a number : '))
+    b = int(input('Enter a number : '))
+    c = a + b;
+    print('Sum is : ',c)
+
+sum()
+
+Tuple:
+A tuple is similar to the list in many ways. Like lists, tuples also contain the collection of the items of different data types. 
+The items of the tuple are separated with a comma (,) and enclosed in parentheses ().
+A tuple is a read-only data structure as we can't modify the size and value of the items of a tuple.
+
+Dictionary:
+Dictionary is an unordered set of a key-value pair of items. It is like an associative array or a hash table where each key stores a specific value.
+Key can hold any primitive data type, whereas value is an arbitrary Python object.
+The items in the dictionary are separated with the comma (,) and enclosed in the curly braces {}.
+e.g.: d = {1:'Jimmy', 2:'Alex', 3:'john', 4:'mike'}  
+
+Set:
+Python Set is the unordered collection of the data type. It is iterable, mutable(can modify after creation), and has unique elements.
+In set, the order of the elements is undefined; it may return the changed sequence of the element.
+The set is created by using a built-in function set(), or a sequence of elements is passed in the curly braces and separated by the comma.
+It can contain various types of values. 
+
+
