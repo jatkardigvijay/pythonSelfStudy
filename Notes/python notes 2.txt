@@ -1,0 +1,108 @@
+Python contains thirty-five keywords
+False,	await,	else,	import,	pass
+None, break,	except,	in,	raise
+True, class,	finally,	is,	return
+and,	continue,	for,	lambda,	try
+as,	def,	from,	nonlocal,	while
+assert,	del,	global,	not,	with
+async,	elif,	if,	or,	yield
+
+// to check how many keywords a python version has:
+help("keywords")
+
+True and False are the equivalent in Python as 1 & 0
+
+print( True == 3 )   //False
+print( False == 0 )   //True
+print( True + True + True)  //3
+
+The None Keyword
+
+None is a Python keyword that means "nothing." None is known as nil, null, or undefined in different computer languages.
+
+If a function does not have a return clause, it will give None as the default output:
+
+
+print( None == 0 )   // False
+print( None == " " )  // False
+print( None == False )  // False
+A = None   
+B = None  
+print( A == B )  //True
+
+If a no_return_function returns nothing, it will simply return a None value. None is delivered by functions that do not meet a return expression in the program flow.
+Consider the following scenario:
+
+Code
+
+def no_return_function():  
+    num1 = 10  
+    num2 = 20  
+    addition = num1 + num2  
+  
+number = no_return_function()  
+print( number )  
+
+Output:
+None
+
+This program has a function with_return that performs multiple operations and contains a return expression.
+As a result, if we display a number, we get None, which is given by default when there is no return statement. Here's an example showing this:
+
+Code
+
+def with_return( num ):  
+    if num % 4 == 0:  
+        return False  
+  
+number = with_return( 67 )  
+print( number )  
+Output:
+
+None
+
+Operator Keywords: and, or, not, in, is:
+
+Mathematical Operations			Operations in Other Languages			Python Keyword
+AND, ∧									&&									and
+OR, ∨									||									or
+NOT, ¬									!									not
+CONTAINS, ∈																	in
+IDENTITY								===									is
+
+Iterations: For while break continue
+	
+	==========
+	
+Exception Handling Keywords - try, except, raise, finally, and assert
+try: This keyword is designed to handle exceptions and is used in conjunction with the keyword except to handle problems in the program. When there is some kind of error, the program inside the "try" block is verified, but the code in that block is not executed.
+
+except: As previously stated, this operates in conjunction with "try" to handle exceptions.
+
+finally: Whatever the outcome of the "try" section, the "finally" box is implemented every time.
+
+raise: The raise keyword could be used to specifically raise an exception.
+
+assert: This method is used to help in troubleshooting. Often used to ensure that code is correct. Nothing occurs if an expression is interpreted as true; however, if it is false, "AssertionError" is raised. An output with the error, followed by a comma, can also be printed.
+
+Code:
+
+# initializing the numbers  
+var1 = 4  
+var2 = 0  
+    
+# Exception raised in the try section  
+try:  
+    d = var1 // var2 # this will raise a "divide by zero" exception.  
+    print( d )  
+# this section will handle exception raised in try block  
+except ZeroDivisionError:  
+    print("We cannot divide by zero")  
+finally:  
+    # If exception is raised or not, this block will be executed every time  
+    print("This is inside finally block")  
+# by using assert keyword we will check if var2 is 0  
+print ("The value of var1 / var2 is : ")  
+assert var2 != 0, "Divide by 0 error"  
+print (var1 / var2)  
+
